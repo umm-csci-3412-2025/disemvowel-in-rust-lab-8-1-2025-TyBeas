@@ -1,6 +1,12 @@
 //TODO: Return the input string without vowels.
 pub fn disemvowel(s: &str) -> String {
-    todo!()
+    // Define vowels
+    let vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+    
+    // Filter out vowels and collect the result into a String
+    s.chars()
+        .filter(|c| !vowels.contains(c))
+        .collect()
 }
 
 // Everything from here down is Rust test code. You shouldn't need to
